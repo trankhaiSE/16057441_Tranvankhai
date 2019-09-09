@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:background="@android:color/holo_blue_light"
+            android:text="Đăng nhập hệ thóng"
+            android:textSize="30sp" />
+        <TableRow>
+            <TextView
+                android:text="Tài khoản: "
+                android:textSize="30sp"/>
+            <EditText
+                android:id="@+id/User"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="30sp"
+                android:text="Tài khoản: "/>
+            <EditText
+                android:id="@+id/Password"
+                android:textSize="30sp"/>
+        </TableRow>
+        <TableRow>
+            <TextView />
+            <CheckBox
+                android:id="@+id/Checked"
+                android:text="Lưu thông tin"/>
+        </TableRow>
+        <TableRow>
+            <TextView />
+            <Button
+                android:id="@+id/Commit"
+                android:text="Đăng nhập"
+                android:textSize="30sp"/>
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
